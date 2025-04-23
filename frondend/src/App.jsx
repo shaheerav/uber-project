@@ -22,15 +22,18 @@ const App = () => {
         <Route path='/home' element={
           <UserProtectWrapper>
             <Home />
-          </UserProtectWrapper>} />
-          <Route path='/user/logout'element= {<UserProtectWrapper>
-            <UserLogout />
-          </UserProtectWrapper>}>
-          </Route>
+          </UserProtectWrapper>
+          } />
+          <Route path='/user/logout'element= {
+            <UserProtectWrapper>
+              <UserLogout />
+            </UserProtectWrapper>
+          }/>
           <Route path='/captain-home' element={
             <CaptainProtectWrapper>
               <CaptainHome /> 
-            </CaptainProtectWrapper>} />
+            </CaptainProtectWrapper>
+          } />
       </Routes>
     </div>
   )
